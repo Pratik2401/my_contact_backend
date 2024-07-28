@@ -8,8 +8,17 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
+      "src": "/api/contacts/(.*)",
+      "dest": "/api/contacts/$1"
+    },
+    {
+      "src": "/api/users/(.*)",
+      "dest": "/api/users/$1"
     }
-  ]
+  ],
+  "env": {
+    "PORT": "5000",
+    "CONNECTION_STRING": "mongodb+srv://admin:8apEy4OBdcljMqBa@pratikcluster.ney4kc5.mongodb.net/my_contact_backend?retryWrites=true&w=majority&appName=pratikCluster",
+    "ACCESS_TOKEN_SECRET": "abc321"
+  }
 }
