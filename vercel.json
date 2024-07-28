@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/api/contacts/(.*)",
-      "dest": "/api/contacts/$1"
+      "dest": "/server.js"
     },
     {
       "src": "/api/users/(.*)",
-      "dest": "/api/users/$1"
+      "dest": "/server.js"
     }
   ],
   "env": {
