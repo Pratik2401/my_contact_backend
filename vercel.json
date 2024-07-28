@@ -8,11 +8,11 @@
   ],
   "routes": [
     {
-      "src": "https://my-contact-backend-ten.vercel.app/api/contacts/(.*)",
+      "src": "/api/contacts/(.*)",
       "dest": "/server.js"
     },
     {
-      "src": "https://my-contact-backend-ten.vercel.app/api/users/(.*)",
+      "src": "/api/users/(.*)",
       "dest": "/server.js"
     }
   ]
