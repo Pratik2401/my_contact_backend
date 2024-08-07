@@ -76,7 +76,7 @@ const updateContact=asyncHandler(async(req,res)=>{
 // access private
 const delContact = asyncHandler(async (req, res) => {
     const contact = await Contact.findById(req.params.id);
-    if (!contact) {
+    if (!contact) { 
         res.status(404);
         throw new Error("Contact Not Found");
     }
